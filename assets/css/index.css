@@ -1,3 +1,73 @@
 html{
   background-color: black;
+  height: 100%;
+  min-height: 100%;
+}
+
+.app-ui {
+  position: relative;
+  display: block;
+  height: 640px;
+  width: 360px;
+  background-color: rgb(255, 255, 255);
+  margin: 16px auto 0;
+}
+
+nav {
+  height: 48px;
+  width: 100%;
+  border-bottom: 1px solid darkgrey;
+  position: relative;
+}
+
+nav>button {
+  height: 48px;
+  width: 48px;
+  background-color: transparent;
+  border: 0;
+  position: absolute;
+}
+
+button>i.fa {
+  font-size: 36px;
+}
+
+button.ui-settings {
+  left: 0;
+  top: 0;
+  right: unset;
+  bottom: unset;
+}
+
+button.ui-chat {
+  left: unset;
+  top: 0;
+  right: 0;
+  bottom: unset;
+}
+/*First No mobile screen >720px*/
+@media screen and (min-width: 720px) {
+    .app-ui {
+    margin-top: 0;
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .app-ui:nth-of-type(1) {
+    margin-right: 5%;
+  }
+
+  body {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 720px) and (min-height: 640px) {
+  body {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
 }
