@@ -13,38 +13,146 @@ html{
   margin: 16px auto 0;
 }
 
-nav {
+/*Estilos del nav*/
+ nav {
   height: 48px;
   width: 100%;
   border-bottom: 1px solid darkgrey;
   position: relative;
 }
-
-nav>button {
+ nav>button {
   height: 48px;
   width: 48px;
   background-color: transparent;
   border: 0;
   position: absolute;
 }
-
-button>i.fa {
+ button>i.fa {
   font-size: 36px;
 }
-
-button.ui-settings {
+ button.ui-settings {
   left: 0;
   top: 0;
   right: unset;
   bottom: unset;
 }
-
-button.ui-chat {
+ button.ui-chat {
   left: unset;
   top: 0;
   right: 0;
   bottom: unset;
 }
+.logo {
+  height: 100%;
+  position: relative;
+  max-width: calc(100% - 96px);
+  overflow: hidden;
+  left: 48px;
+}
+.logo>img {
+  display: inline-block;
+  height: 100%;
+}
+
+/*Estilo del slider*/
+ul.slider {
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+ul.slider>li {
+  display: inline-block;
+  margin: 10px;
+  width: 340px;
+  height: 480px;
+  position: relative;
+}
+
+figure.profile {
+  width: 100%;
+  height: 100%;
+  border: 1px solid lightgrey;
+  box-shadow: 0 0 2px 2px lightgrey;
+}
+
+figure.profile>img {
+  display: inline-block;
+  height: calc(100% - 64px);
+  max-width: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+figure.profile>figcaption {
+  height: 64px;
+  margin: 0 10px;
+}
+
+figure.profile>figcaption>h1,
+figure.profile>figcaption>p {
+  text-align: left;
+  padding-left: 1rem;
+}
+
+figure.profile>figcaption>h1 {
+  font-size: 1.4rem;
+  line-height: 1.5rem;
+}
+
+figure.profile>figcaption>p {
+  font-size: 1rem;
+}
+
+figure.profile>figcaption>h1>.age::before {
+  content: ", ";
+}
+
+/**/
+div>button {
+  display: inline-block;
+  border-radius: 100%;
+  border: 8px solid lightgrey;
+  height: 140px;
+  background-color: rgb(255, 255, 255);
+  vertical-align: top;
+}
+
+div>button.ui-small>i {
+  font-size: 1.5rem;
+}
+
+div>button.ui-big>i {
+  font-size: 2rem;
+}
+
+div>button.ui-small{
+  height: 54px;
+  width: 54px;
+}
+
+div>button.ui-big {
+  height: 78px;
+  width: 78px;
+}
+
+.fa-undo {
+  color: #FFD700;
+}
+
+.fa-times {
+  color: red;
+}
+
+.fa-heart {
+  color: green;
+}
+
+.fa-star {
+  color: blue;
+}
+
 /*First No mobile screen >720px*/
 @media screen and (min-width: 720px) {
     .app-ui {
