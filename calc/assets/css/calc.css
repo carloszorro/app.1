@@ -1,0 +1,57 @@
+html {
+  background-color: #F4F4F4;
+}
+
+body {
+  height: 640px;
+  width: 360px;
+  display: inline-block;
+  border: 1px solid black;
+  position: relative;
+}
+
+#results{
+  border: 2px solid black;
+  height: 76px;
+  width: 252px;
+  margin-top: 8px;
+  margin-left: 8px;
+  display: inline-block;
+  background-color: #3F3743;
+}
+
+li.button {
+  display: inline-block;
+  height: 76px;
+  width: 76px;
+  box-shadow: 2px 2px 2px 2px;
+  margin-top: 8px;
+  margin-left: 8px;
+  text-align: center;
+  line-height: 80px;
+  color: #3F3743;
+  padding: 0;
+}
+
+ul#digits {
+  max-width: 256px;
+  display: block;
+}
+
+ul#operations {
+  border: 2px solid black;
+  color: #E34C26;
+  position: absolute;;
+  right: 0;
+  top: 0;
+}
+
+ul#operations>li {
+  position: relative;
+  display: block;
+  height: 80px;
+  width: 80px;
+  box-shadow: 2px 2px 2px 2px;
+  text-align: center;
+  line-height: 80px;
+}
