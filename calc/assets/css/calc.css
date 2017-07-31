@@ -34,24 +34,33 @@ li.button {
 }
 
 ul#digits {
-  max-width: 256px;
+  max-width: 268px;
   display: block;
+  margin-top: -4px;
 }
 
 ul#operations {
-  border: 2px solid black;
   color: #E34C26;
   position: absolute;;
-  right: 0;
-  top: 0;
+  right: 4px;
+  top: 4px;
 }
 
 ul#operations>li {
   position: relative;
   display: block;
-  height: 80px;
-  width: 80px;
+  height: 76px;
+  width: 76px;
   box-shadow: 2px 2px 2px 2px;
   text-align: center;
   line-height: 80px;
+  margin-top: 8px;
+  margin-right: 8px;
+}
+
+ul#operations>li:last-of-type {
+  position:relative;
+  top: -84px;
+  left: -88px;
+
 }
